@@ -43,7 +43,7 @@ describe Request do
   end
   context "#content_length" do
     it "returns an integer" do
-      expect(subject.content_length).to be_a Integer
+      expect(subject.content_length).to be_a Fixnum
     end
   end
 end
