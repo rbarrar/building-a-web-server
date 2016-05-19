@@ -33,6 +33,7 @@ describe Request do
   context "#params" do
     it "merges the query hash and post_data hash and memoizes it" do
       expect(subject.params).to eq({key: "value", hello: "world"})
+      expect(subject.params.object_id).to be subject.params.object_id
     end
   end
   context "#cookies" do
