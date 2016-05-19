@@ -1,5 +1,5 @@
-require './request'
-require './http_parser'
+require './lib/request'
+require './lib/http_parser'
 require 'socket'
 
 class HttpServer < TCPServer
@@ -15,5 +15,7 @@ class HttpServer < TCPServer
     end
   end
 end
+
+puts "listening on localhost:9000..."
 
 HttpServer.new(9000).serve
