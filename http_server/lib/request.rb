@@ -1,7 +1,7 @@
 class Request
 
-  attr_reader :headers, :info
-  attr_accessor :http_method, :path, :query, :post_data, :cookies, :content_length
+  attr_reader :info
+  attr_accessor :http_method, :path, :query, :post_data, :cookies, :content_length, :headers, :body
 
   def initialize
     @headers = {}
